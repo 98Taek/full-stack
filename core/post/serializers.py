@@ -10,7 +10,7 @@ class PostSerializer(AbstractSerializer):
     author = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='public_id')
 
     def validate_author(self, value):
-        if self.context['request'].uer != value:
+        if self.context['request'].user != value:
             raise ValidationError("You can't create a post for another user.")
         return value
 
