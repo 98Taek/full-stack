@@ -1,7 +1,6 @@
 from rest_framework_nested import routers
 
-from core.auth.viewsets import LoginViewSet, RegisterViewSet
-from core.auth.viewsets.refresh import RefreshViewSet
+from core.auth.viewsets import LoginViewSet, RegisterViewSet, RefreshViewSet
 from core.comment.viewsets import CommentViewSet
 from core.post.viewsets import PostViewSet
 from core.user.viewsets import UserViewSet
