@@ -1,11 +1,11 @@
 import React from "react";
 
-function Home() {
+function Home({name}) {
     return (
         <div>
             <h1>Profile</h1>
             <p>
-                Welcome!
+                Welcome! {name}
             </p>
         </div>
     );
