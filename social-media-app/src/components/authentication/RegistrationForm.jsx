@@ -121,7 +121,7 @@ function RegistrationForm() {
           value={form.bio}
           onChange={(e) => setForm({ ...form, bio: e.target.value })}
           required
-          as="testarea"
+          as="textarea"
           rows={3}
           placeholder="A simple bio ... (Optional)"
         />
