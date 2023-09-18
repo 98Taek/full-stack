@@ -51,7 +51,7 @@ function RegistrationForm() {
       onSubmit={handleSubmit}
     >
       <Form.Group className="mb-3">
-        <Form.label>First Name</Form.label>
+        <Form.Label>First Name</Form.Label>
         <Form.Control
           value={form.first_name}
           onChange={(e) => setForm({ ...form, first_name: e.target.value })}
