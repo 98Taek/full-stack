@@ -3,10 +3,18 @@ import { Card, Image } from "react-bootstrap";
 import { format } from "timeago.js";
 import { randomAvatar } from "../../utils";
 import { LikeFilled, LikeOutlined } from "@ant-design/icons";
+import axiosService from "../../helpers/axios";
 
 function Post(props) {
   const { post, refresh } = props;
-  const handleLikeClick = (action) => {};
+  const handleLikeClick = (action) => {
+    axiosService
+      .post(`/post/${post.id}/${action}/`)
+      .then(() => {
+        refresh();
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <>
