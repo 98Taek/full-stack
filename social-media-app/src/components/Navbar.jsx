@@ -1,10 +1,10 @@
 import React from "react";
 import { randomAvatar } from "../utils";
 import { Navbar, Container, Image, NavDropdown, Nav } from "react-bootstrap";
-import { useUserAction } from "../hooks/user.actions";
+import { useUserActions } from "../hooks/user.actions";
 
 function Navigationbar() {
-  const userAction = useUserAction();
+  const userAction = useUserActions();
 
   const handleLogout = () => {
     userAction.logout()
