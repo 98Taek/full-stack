@@ -148,7 +148,7 @@ REST_FRAMEWORK = {
 
 SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': True,
-    'ACCESS_TOKEN_LIFETIME': timedelta(hours=8),
+    # 'ACCESS_TOKEN_LIFETIME': timedelta(hours=8),
 }
 
 CORS_ALLOWED_ORIGINS = [
