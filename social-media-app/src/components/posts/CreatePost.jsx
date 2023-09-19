@@ -33,12 +33,12 @@ function CreatePost() {
       .then(() => {
         handleClose();
         setForm({});
-        setToastMessage("Post created");
+        setToastMessage("Post created 🚀");
         setToastType("success");
-        setShowToast("true");
+        setShowToast(true);
       })
       .catch((error) => {
-        setToastMessage("An error occured.");
+        setToastMessage("An error occurred.");
         setToastType("danger");
         setShowToast(true);
         console.log(error);
