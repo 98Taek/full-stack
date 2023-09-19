@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import { format } from "timeago.js";
-import { randomAvartar } from "../../utils";
+import { randomAvatar } from "../../utils";
 import { LikeFilled, LikeOutlined } from "@ant-design/icons";
 
 function Post(props) {
@@ -15,7 +15,7 @@ function Post(props) {
           <Card.Title className="d-flex flex-row justify-content-between">
             <div className="d-flex flex-row">
               <Image
-                src={randomAvartar()}
+                src={randomAvatar()}
                 roundedCircle
                 width={48}
                 height={48}
