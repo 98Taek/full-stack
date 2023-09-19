@@ -5,7 +5,7 @@ import { getAccessToken, getRefreshToken, getUser } from "../hooks/user.actions"
 const axiosService = axios.create({
   baseURL: "http://localhost:8000/api",
   headers: {
-    "Contnet-Type": "application/json",
+    "Content-Type": "application/json",
   },
 });
 

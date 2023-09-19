@@ -36,9 +36,9 @@ function Home() {
             </Col>
           </Row>
           <Row className="my-4">
-            {posts.data?.results.map((post, index) => {
+            {posts.data?.results.map((post, index) => (
               <Post key={index} post={post} refresh={posts.mutate} />
-            })}
+            ))}
           </Row>
         </Col>
       </Row>
