@@ -27,7 +27,7 @@ jobs:
       - name: Deploying Application on Server
         uses: appleboy/ssh-action@master
         with:
-          hosts: ${{ secrets.SSH_NCLOUD_IP }}
+          host: ${{ secrets.SSH_NCLOUD_IP }}
           username: ${{ secrets.SSH_NCLOUD_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ''
