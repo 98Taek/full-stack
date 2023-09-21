@@ -33,6 +33,6 @@ jobs:
           passphrase: ''
           script: |
             cd full-stack
-            ls full-stack
+            ls -laF
             echo "${{ secrets.TEST_SECRETS }}" >> .env
             ./docker-ncloud-deploy.sh
